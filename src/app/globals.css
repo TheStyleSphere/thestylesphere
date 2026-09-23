@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+@theme {
+  --breakpoint-editorial: 1440px;
+}
+
+@keyframes progress {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+:root {
+  --color-background: #F4F0E9;
+  --color-foreground: #233228;
+
+  --color-muted: #667067;
+
+  --color-accent: #7A3540;
+  --color-accent-soft: #E5D2D3;
+
+  --color-surface: #FFFBF7;
+  --color-surface-warm: #E8E1D8;
+
+  --color-border: #D8D2C9;
+}S
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  background: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-dm-sans),Arial, Helvetica, sans-serif;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+::selection {
+  background: var(--color-accent);
+  color: var(--color-background);
+}
+
+@keyframes cta-pulse {
+  0%,
+  70%,
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+
+  78% {
+    transform: scale(1);
+    opacity: 0.4;
+  }
+
+  90% {
+    transform: scale(2.2);
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+  }
+}
