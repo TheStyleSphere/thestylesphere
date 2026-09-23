@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Hero() {
   return (
     <section className="relative overflow-hidden bg-[var(--color-background)]">
@@ -43,7 +45,7 @@ export default function Hero() {
         {/* Editorial image area */}
         <div className="relative z-10 mt-10 flex min-h-[26rem] lg:col-span-6 lg:mt-0 editorial:col-span-4">
           <div className="relative h-full min-h-[36rem] w-full overflow-hidden bg-[#e5e9e1] lg:min-h-0">
-            <img
+            <Image
               src="/images/hero.jpg"
               alt="Professional Style and Presence Consulting"
               className="h-full w-full object-cover"

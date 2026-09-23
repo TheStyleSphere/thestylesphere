@@ -82,7 +82,7 @@ export default function FloatingCTA() {
             </h2>
 
             <p className="mt-5 max-w-sm text-sm leading-7 text-[var(--color-muted)]">
-              Book a 10-minute conversation to talk about what you're looking
+              Book a 10-minute conversation to talk about what you&apos;re looking
               for, understand how Style Sphere works, and see where you might
               want to begin.
             </p>

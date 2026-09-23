@@ -13,7 +13,7 @@ export default function FinalCTA() {
             </p>
 
             <h2 className="max-w-4xl font-[family-name:var(--font-dm-serif)] text-5xl leading-[1.02] tracking-[-0.03em] text-[var(--color-foreground)] sm:text-6xl lg:text-8xl">
-              Let's make it intentional.
+              Let&apos;s make it intentional.
             </h2>
           </div>
 

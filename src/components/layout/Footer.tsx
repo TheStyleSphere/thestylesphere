@@ -5,12 +5,11 @@ export default function Footer() {
         <div className="grid gap-12 lg:grid-cols-12 lg:gap-8">
           {/* Brand */}
           <div className="lg:col-span-5">
-            <a
-              href="/"
+            <h4
               className="font-[family-name:var(--font-dm-serif)] text-3xl tracking-[-0.03em]"
             >
               Style Sphere
-            </a>
+            </h4>
 
             <p className="mt-5 max-w-sm text-sm leading-6 text-[#cbd4c7]">
               Helping individuals and organisations build a stronger,

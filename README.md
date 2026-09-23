@@ -1,36 +1,132 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Style Sphere
+
+Website for **Style Sphere**, a personal image and professional development brand by Sukanya Saha.
+
+The website presents Style Sphere's services for individuals and organisations, with a focus on personal image, professional presence, communication, and practical soft-skills development.
+
+## Tech Stack
+
+* **Next.js**
+* **React**
+* **TypeScript**
+* **Tailwind CSS**
+* **Next/Image**
+* **Google Fonts** — DM Sans & DM Serif Display
 
 ## Getting Started
 
-First, run the development server:
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000 in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Build for production:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+```
 
-## Learn More
+Start the production server:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Project Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```text
+src/
+├── app/
+│   ├── layout.tsx
+│   ├── page.tsx
+│   └── globals.css
+│
+├── components/
+│   ├── sections/       # Homepage sections
+│   └── ui/             # Reusable UI components
+│
+├── data/
+│   └── siteContent.ts  # Website content and service data
+│
+public/
+└── images/             # Local website images and assets
+```
 
-## Deploy on Vercel
+## Content
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Most homepage content is centralised in:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```text
+src/data/siteContent.ts
+```
+
+Update content there where possible rather than editing text directly inside individual components.
+
+## Styling
+
+Global design tokens and typography are defined in:
+
+```text
+src/app/globals.css
+```
+
+The site uses:
+
+* DM Serif Display for editorial/display typography
+* DM Sans for body and interface text
+* Neutral warm surfaces
+* Dark green as the primary text colour
+* Burgundy as an accent colour
+
+## WhatsApp CTA
+
+The website includes:
+
+* A persistent **"Book a 10-minute demo"** floating CTA
+* A contextual booking prompt triggered when visitors reach the Services section
+
+The WhatsApp number and pre-filled message are configured inside the relevant CTA component.
+
+Before deployment, replace the placeholder WhatsApp number with the client's actual number.
+
+## SEO
+
+Basic metadata, Open Graph information, robots configuration, and the site's canonical base URL are configured in:
+
+```text
+src/app/layout.tsx
+```
+
+The production site is:
+
+```text
+https://www.thestylesphere.me
+```
+
+## Deployment
+
+The project can be deployed as a standard Next.js application.
+
+Before deployment, check:
+
+* Production domain
+* WhatsApp number
+* Open Graph image
+* Image alt text
+* SEO metadata
+* Production build with `npm run build`
+
+## Development Notes
+
+Keep reusable UI components in `components/ui` and page-specific sections in `components/sections`.
+
+When adding or changing content, prefer updating `siteContent.ts` rather than duplicating content across components.

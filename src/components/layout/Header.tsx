@@ -13,13 +13,11 @@ export default function Header() {
     <header className="relative z-50 bg-[var(--color-background)]">
       <div className="mx-auto flex min-h-20 max-w-7xl items-center justify-between gap-6 px-6 sm:px-10 lg:px-12">
         {/* Brand */}
-        <a
-          href="/"
-          onClick={closeMenu}
+        <h4
           className="shrink-0 font-[family-name:var(--font-dm-serif)] text-2xl tracking-[-0.03em] text-[var(--color-foreground)]"
         >
           Style Sphere
-        </a>
+        </h4>
 
         {/* Desktop navigation */}
         <nav
