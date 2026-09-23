@@ -48,7 +48,10 @@ export default function Hero() {
             <Image
               src="/images/hero.jpg"
               alt="Professional Style and Presence Consulting"
-              className="h-full w-full object-cover"
+              fill
+              className="object-cover"
+              sizes="(min-width: 1024px) 50vw, 100vw"
+              loading="eager"
             />
           </div>
         </div>
