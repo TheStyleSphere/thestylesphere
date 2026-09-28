@@ -25,7 +25,7 @@ export function AboutSukanya() {
             </div>
 
             <p className="mt-3 text-[10px] uppercase tracking-[0.16em] text-[var(--color-muted)]">
-              Sukanya Saha · Soft Skills & Professional Development
+              Sukanya Saha · Image Consultant  | Soft Skills Trainer | Personal Stylist
             </p>
           </div>
 
