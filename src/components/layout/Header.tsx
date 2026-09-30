@@ -1,5 +1,5 @@
 "use client";
-
+import Image from "next/image";
 import { useState } from "react";
 
 export default function Header() {
@@ -13,11 +13,20 @@ export default function Header() {
     <header className="relative z-50 bg-[var(--color-background)]">
       <div className="mx-auto flex min-h-20 max-w-7xl items-center justify-between gap-6 px-6 sm:px-10 lg:px-12">
         {/* Brand */}
-        <h4
-          className="shrink-0 font-[family-name:var(--font-dm-serif)] text-2xl tracking-[-0.03em] text-[var(--color-foreground)]"
-        >
-          Style Sphere
-        </h4>
+        <div className="flex items-center gap-2">
+          <Image
+            src="/images/Logo-Light-Mode-Flat-Sage-Gold-Icon-Only.svg"
+            alt="Style Sphere Logo"
+            className="object-contain"
+            width={100} 
+            height={100}
+          />
+          <h4
+            className="shrink-0 font-[family-name:var(--font-dm-serif)] text-2xl tracking-[-0.03em] text-[var(--color-foreground)]"
+          >
+            Style Sphere
+          </h4>
+        </div>
 
         {/* Desktop navigation */}
         <nav
