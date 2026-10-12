@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Individuals() {
   return (
     <section
-      id="individuals-details"
+      id="individual-details"
       className="bg-[var(--color-background)] px-6 py-24 sm:px-10 sm:py-32 lg:px-12 lg:py-40"
     >
       <div className="mx-auto max-w-7xl">
