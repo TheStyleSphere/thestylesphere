@@ -6,7 +6,7 @@ export default function Organisations() {
   return (
   <>
     <section
-      id="organisations-details"
+      id="organisation-details"
       className="bg-[var(--color-surface)] px-6 py-24 text-[var(--color-foreground)] sm:px-10 sm:py-32 lg:px-12 lg:py-40"
     >
       <div className="mx-auto max-w-7xl">
