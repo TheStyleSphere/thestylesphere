@@ -88,7 +88,7 @@ export function ServicesPreview() {
                     </div>
 
                     <a
-                      href={`#${service.id}-details`}
+                      href={`#${service.id}`}
                       className="mt-9 inline-flex items-center text-sm font-medium text-[var(--color-accent)] transition-transform hover:translate-x-1"
                     >
                       {service.cta}
