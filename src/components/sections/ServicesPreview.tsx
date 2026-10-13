@@ -23,7 +23,6 @@ export function ServicesPreview() {
             return (
               <article
                 key={service.id}
-                id={service.id}
                 className={`grid border-t border-[var(--color-border)] lg:grid-cols-12 ${
                   isReversed ? "lg:flex-row-reverse" : ""
                 }`}
